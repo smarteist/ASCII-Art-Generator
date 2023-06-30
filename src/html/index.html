@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  ${ require('./partials/head.html') }
+</head>
+<body>
+
+${ require('src/html/partials/browserupgrade.html') }
+
+<div class="d-flex flex-column h-100">
+
+  ${ require('src/html/partials/header.html') }
+
+  <main class="h-100 align-items-center overflow-y-auto py-3">
+    <div class="d-flex justify-content-center">
+      <section class="col-11">
+
+        <form id="mainForm">
+
+          <div class="form-floating mt-1">
+            <textarea class="form-control" placeholder="Leave a comment here" id="textInput"
+                      style="height: 80px"></textarea>
+            <label for="textInput" style="color:rgba(33, 37, 41, 0.65)">Insert your text</label>
+          </div>
+
+          <div class="form-floating mt-1">
+            <select class="form-select" aria-label="Choose a figlet font" id="fontSelect">
+              <option selected disabled value="Slant">Select Font</option>
+            </select>
+            <label for="fontSelect">Select ASCII Art Font</label>
+          </div>
+
+          <div class="form-floating mt-1">
+            <input type="number" id="widthInput" class="form-control" value="255"/>
+            <label class="form-label" for="widthInput">Width</label>
+          </div>
+
+        </form>
+        <div class="mt-2">
+          <pre id="outputArt" class="output" style="min-height: 200px;"></pre>
+          <a id="copyOutput" class="btn btn-outline-primary">Copy</a>
+          <a id="copyOutputEscaped" class="btn btn-primary">Copy Escaped</a>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  ${ require('./partials/footer.html') }
+
+</div>
+</body>
+</html>

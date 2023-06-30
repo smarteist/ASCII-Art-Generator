@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        ${ require("src/assets/images/logo.html") }
+        <strong class="d-inline">ASCII Art Generator tool</strong>
+      </a>
+
+      <div>
+
+        <ul class="navbar-nav ml-auto flex-row">
+          <li class="nav-item mx-2">
+            <a href="http://www.figlet.org/" class="nav-link h-100 px-0">
+              Figlet
+              ${ require("src/assets/images/logo.html") }
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="https://en.wikipedia.org/wiki/ASCII_art" class="nav-link h-100 px-0 d-flex align-items-center">
+              ASCII art?
+             <i style="font-size: 25px" class="fa fa-font"></i>
+            </a>
+          </li>
+          <li class="nav-item mx-2 d-flex align-items-center">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" name="dark-mode-toggle" id="switch-dark-mode">
+              <label class="form-check-label" for="switch-dark-mode">
+                <i class="fa fa-moon-o"></i>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
