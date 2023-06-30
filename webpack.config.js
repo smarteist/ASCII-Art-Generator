@@ -175,7 +175,7 @@ module.exports = function (env, args) {
       new CopyWebpackPlugin({
         patterns: [
           {
-            from: path.resolve(__dirname, 'node_modules/figlet/fonts/*/**'),
+            from: path.resolve(__dirname, 'node_modules/figlet/fonts/*'),
             to: path.resolve(__dirname, 'dist/fonts'),
             context: path.resolve(__dirname, 'node_modules/figlet/fonts'),
           },

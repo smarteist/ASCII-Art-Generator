@@ -9,6 +9,7 @@ html[data-theme='dark'] {
   --bg-color: #{$gray-800};
   --bg-color-rgb: #{toRGB($gray-800, true)};
   --text-color: #{a11y-color($white, $gray-800)};
+  --header-text-color: #{a11y-color($text-color, $gray-900,'AAA')};
   --text-color-rgb: #{toRGB(a11y-color($white, $gray-800,'AAA'), true)};
   --text-color-contrast: #{a11y-color($white, $gray-800,'AAA')};
   --text-color-contrast-rgb: #{toRGB(a11y-color($white, $gray-800,'AAA'), true)};
